@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+<body>
+
+    <h1>Álcool ou Gasolina - DESAFIO ALURA</h1>
+
+    <p>
+        Agora temos um grande desafio! Você agora é uma pessoa desenvolvedora e gostaria de aplicar seus conhecimentos em programação para resolver problemas do cotidiano. O primeiro problema que surge é sobre o consumo de combustível de seu carro, vamos olhar com mais atenção os detalhes? Portanto, confira as informações abaixo:
+    </p> 
+    
+    <p>Seu carro tem um tanque de 40 litros e pode utilizar álcool ou gasolina.</p> 
+    
+    <p>Com gasolina e usando todo o tanque você percorre um caminho com gasolina de 480 quilômetros. Qual é o consumo de gasolina?</p>
+        
+    <p> Com álcool, um tanque de 40 litros fez um caminho com Álcool de 300 quilômetros. Qual é o consumo de Álcool?</p> 
+
+    <script>
+        // Carro: 40 litros - Flex | distância usando galosina: 480 km | distância usando alcool: 300 km*/
+
+        const caminhoComGasolina = 480;
+        const litrosGastos = 40;
+
+        const caminhoComAlcool = 300;
+
+        const consumoComAlcool = caminhoComAlcool / litrosGastos;
+        const consumoDeGasolina = caminhoComGasolina / litrosGastos;
+        
+        document.write("<u>O consumo de alcool é igual a " + consumoComAlcool + " km/l.</u> <br>");
+        document.write("<u>O consumo de gasolina é igual a " + consumoDeGasolina + " km/l.</u>");
+        document.write("<br> <br>");
+        document.write("A melhor opção nesse caso seria a gasolina!");
+
+    </script>
+</body>
+</html>
