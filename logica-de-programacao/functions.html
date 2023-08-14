@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funões</title>
+    <title>Funções</title>
 </head>
 <body>
     <script>
-        function exibe(texto){
-            document.write(texto);
-            pulaLinha();
-        }
 
         function pulaLinha(){
             document.write("<br> <br>");
+        }
+
+        function exibe(texto){
+            document.write(texto);
+            pulaLinha();
         }
 
         const anoNascimentoAkley = 2001;
@@ -23,6 +24,7 @@
         exibe("Akley tem " + (2023 - anoNascimentoAkley) + " anos.");
         exibe("Karinne tem " + (2023 - anoDeNascimentoKarinne) + " anos.");
         exibe("Juan tem " + (2023 - anoDeNascimentoJuan) + " anos.");
+
     </script>
         
 </body>
