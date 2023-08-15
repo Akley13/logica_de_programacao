@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Desafio Alura</title>
 </head>
 <body>
     <script>
@@ -17,6 +17,13 @@
             pulaLinha();
         }
 
+        document.write("<h1> ATIVIDADE | ALURA</h1>");
+
+    
+        document.write("<p>Em média, um casal tem filhos quando atinge a idade de 28 anos. Seguindo essa média, se os portugueses chegaram em 1500 no Brasil, então, a primeira geração de brasileiros surgiu em 1528, a segunda em 1556 e assim por diante. Desde 1500 até o ano atual, quantas gerações se passaram?</p>");
+
+        exibe("Imprima esse número da seguinte maneira: calcule quantos anos passaram desde 1500 e divida o resultado pela média de 28 anos.");
+
         const anoAtual = 2023;
         const anoQueBrasilFoiColonizado = 1500;
         const idadeMediaFilhos = 28;
@@ -26,7 +33,7 @@
         document.write("Ano atual: 2023 <br>")
         exibe("Ano que o Brasil foi colonizado pelos portugueses: 1500")
         exibe("Quantas gerações se passaram até os dias de hoje? ")
-        exibe("Se passaram " + quantidadeDeAnos + " anos e " + Math.round(geracoesPassadas) + " gerações.")
+        exibe("<u>Se passaram " + quantidadeDeAnos + " anos e " + Math.round(geracoesPassadas) + " gerações.</u>")
 
     </script>
 </body>
