@@ -8,7 +8,7 @@
 <body>
     <script>
         function pulaLinha(){
-            document.write("<br><br>");
+            document.write("<br>");
         }
 
         function exibe(texto){
@@ -20,13 +20,15 @@
             return peso / (altura * altura);
         }
 
+        const nome = prompt("Nome: ");
         const pesoUsuario = prompt("Informe seu peso: ");
         const alturaUsuario = prompt("Informe sua altura: ");
         const imcAkley = calculadoraImc(pesoUsuario, alturaUsuario);
 
+        exibe("Nome: " + nome);
         exibe("Peso: " + pesoUsuario + " Kg");
-        exibe("Altura: " + alturaUsuario + " m/cm");
-        exibe("IMC: " + imcAkley);
+        exibe("Altura: " + alturaUsuario + " m/cm <br>");
+        exibe(nome + ", seu IMC é: " + imcAkley);
     </script>
 </body>
 </html>
