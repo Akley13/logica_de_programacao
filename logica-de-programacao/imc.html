@@ -18,16 +18,19 @@
         }
 
         function calculoImc(peso, altura){
-            const imc = peso / (altura * altura);
-            exibe("IMC: " + imc)
+            return imc = peso / (altura * altura);
+            // const imc = peso / (altura * altura);
+            // return imc;
         }
 
         document.write("<h1>CALCULANDO ÍNDICE DE MASSA CORPORAL (IMC)</h1>")
 
         exibe("O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.")
 
-        calculoImc(84, 1.76);
-        calculoImc(42, 1.60);
+        const totalImc = calculoImc(84, 1.76) + calculoImc(42, 1.60);
+
+        exibe("A soma dos IMC's é " + totalImc);
+
 
     </script>
 </body>
