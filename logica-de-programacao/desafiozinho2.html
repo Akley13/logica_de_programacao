@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function pulaLinha(){
+            document.write("<br><br>")
+        }
+
+        function exibe(texto){
+            document.write(texto);
+            pulaLinha();
+        }
+
+        const anoAtual = 2023;
+        const anoQueBrasilFoiColonizado = 1500;
+        const idadeMediaFilhos = 28;
+        const geracoesPassadas = (anoAtual - anoQueBrasilFoiColonizado) / idadeMediaFilhos;
+        const quantidadeDeAnos = anoAtual - anoQueBrasilFoiColonizado;
+
+        document.write("Ano atual: 2023 <br>")
+        exibe("Ano que o Brasil foi colonizado pelos portugueses: 1500")
+        exibe("Quantas gerações se passaram até os dias de hoje? ")
+        exibe("Se passaram " + quantidadeDeAnos + " anos e " + Math.round(geracoesPassadas) + " gerações.")
+
+    </script>
+</body>
+</html>
