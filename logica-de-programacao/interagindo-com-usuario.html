@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interagindo com o usuário</title>
+</head>
+<body>
+    <script>
+        function pulaLinha(){
+            document.write("<br><br>");
+        }
+
+        function exibe(texto){
+            document.write(texto);
+            pulaLinha();
+        }
+
+        function calculadoraImc(peso, altura){
+            return peso / (altura * altura);
+        }
+
+        const pesoUsuario = prompt("Informe seu peso: ");
+        const alturaUsuario = prompt("Informe sua altura: ");
+        const imcAkley = calculadoraImc(pesoUsuario, alturaUsuario);
+
+        exibe("Peso: " + pesoUsuario + " Kg");
+        exibe("Altura: " + alturaUsuario + " m/cm");
+        exibe("IMC: " + imcAkley);
+    </script>
+</body>
+</html>
