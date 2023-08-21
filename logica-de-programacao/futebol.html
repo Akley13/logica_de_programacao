@@ -12,10 +12,16 @@
         }
 
         function  exibe(texto){
-            document.write(Texto);
+            document.write(texto);
+            pulaLinha();
         }
 
-        
+        const vitorias = parseInt(prompt("Número de vitórias: "));
+        const empates = parseInt(prompt("Número de empates: "));
+
+        const pontos = vitorias * 3 + empates;
+
+        exibe("Os pontos do seu time é " + pontos);
 
     </script>
 </body>
