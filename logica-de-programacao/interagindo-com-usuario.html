@@ -8,6 +8,8 @@
 <body>
     <script>
 
+        document.write("<h1>CALCULADORA DE IMC</h1>");
+
         function pulaLinha(){
             document.write("<br>");
         }
@@ -24,22 +26,22 @@
         const nome = prompt("Nome: ");
         const pesoUsuario = prompt("Informe seu peso: ");
         const alturaUsuario = prompt("Informe sua altura: ");
-        const imcAkley = calculadoraImc(pesoUsuario, alturaUsuario);
+        const imc = calculadoraImc(pesoUsuario, alturaUsuario);
 
         exibe("Nome: " + nome);
         exibe("Peso: " + pesoUsuario + " Kg");
         exibe("Altura: " + alturaUsuario + " m/cm <br>");
-        exibe(nome + ", seu IMC é: " + imcAkley);
+        exibe(nome + ", seu IMC é: " + imc);
 
-        if (imcAkley > 18.5 & imcAkley < 35){
+        if (imc >= 18.5 & imc <= 35){
             exibe("Você está na média.");
         }
 
-        if (imcAkley > 35){
+        if (imc > 35){
             exibe("Você está acima do peso.");
         }
 
-        if (imcAkley < 18.5){
+        if (imc < 18.5){
             exibe("Você está abaixo do peso.");
         }
 
