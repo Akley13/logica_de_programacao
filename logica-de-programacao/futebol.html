@@ -16,12 +16,25 @@
             pulaLinha();
         }
 
+        const time = prompt("Time favorito: ");
         const vitorias = parseInt(prompt("Número de vitórias: "));
         const empates = parseInt(prompt("Número de empates: "));
 
         const pontos = vitorias * 3 + empates;
 
-        exibe("Os pontos do seu time é " + pontos);
+        exibe("DADOS DO TIME: " + time);
+        exibe("Total de pontos:  " + pontos);
+
+        if (pontos > 28){
+            exibe("Time melhor do que ano passado!");
+        }
+        if (pontos < 28){
+            exibe("Time pior do que ano passado!");
+        }
+        if (pontos == 28){
+            exibe("Time igual ao ano passado!");
+
+        }
 
     </script>
 </body>
