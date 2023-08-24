@@ -30,6 +30,19 @@
         exibe("Peso: " + pesoUsuario + " Kg");
         exibe("Altura: " + alturaUsuario + " m/cm <br>");
         exibe(nome + ", seu IMC é: " + imcAkley);
+
+        if (imcAkley > 18.5 & imcAkley < 35){
+            exibe("Você está na média.");
+        }
+
+        if (imcAkley > 35){
+            exibe("Você está acima do peso.");
+        }
+
+        if (imcAkley < 18.5){
+            exibe("Você está abaixo do peso.");
+        }
+
     </script>
 </body>
 </html>
