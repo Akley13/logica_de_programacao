@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOGO</title>
+</head>
+<body>
+    <script>
+
+        document.write("<h1>JOGO DA ADIVINHAÇÃO</h1>")
+
+        function pulaLinha(){
+            document.write("<br><br>");
+        }
+
+        function exibe(texto){
+            document.write(texto);
+            pulaLinha();
+        }
+
+        const numeroDigitado = prompt("Escolha um número de 1 a 10");
+        const numeroSorteado = Math.round(Math.random() * 10);
+
+        if(numeroDigitado == numeroSorteado){
+            exibe("Você ganhou, Parabéns!")
+        } else {
+            exibe("Tente novamente :(");
+            exibe("O número sorteado era " + numeroSorteado)
+        }
+
+    </script>
+</body>
+</html>
