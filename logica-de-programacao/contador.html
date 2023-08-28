@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+</head>
+<body>
+    <script>
+        document.write("<h1>CONTADOR</h1>");
+        
+        function pulaLinha(){
+            document.write("<br><br>");
+        }
+
+        function exibe(texto){
+            document.write(texto);
+            pulaLinha();
+        }
+
+        var contador = 0;
+
+        while(contador != 101){
+            exibe(contador);
+            contador += 1;
+        }
+
+    </script>
+</body>
+</html>
