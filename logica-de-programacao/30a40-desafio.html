@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+<body>
+    <script>
+        document.write("<h1>30 a 40 | Porém, não pode imprimir o n° 33 e 37!</h1>");
+        
+        function pulaLinha(){
+            document.write("<br><br>");
+        }
+
+        function exibe(texto){
+            document.write(texto);
+            pulaLinha();
+        }
+
+        var contador = 30;
+
+        while(contador != 41){
+            exibe(contador);
+            contador += 1;
+
+            if(contador == 33){
+                contador += 1;
+            }
+
+            if(contador == 37){
+                contador += 1;
+            }
+        }
+
+        exibe("FIM")
+
+    </script>
+</body>
+</html>
