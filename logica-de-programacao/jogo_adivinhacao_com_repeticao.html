@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOGO DA ADIVINHAÇÃO</title>
+</head>
+<body>
+    <script>
+
+        function pulaLinha(){
+            document.write("<br><br>")
+        }
+
+        function exibe(texto){
+            document.write(texto);
+            pulaLinha();
+        }
+
+        const numeroSorteado = Math.floor(Math.random() * 13 + 1);
+        console.log(numeroSorteado);
+        var tentativas = 0;
+
+        while(tentativas < 3){
+
+            var numeroDigitado = parseInt(prompt("Digite um número de 1 a 13, você terá três chances. " + "Tentativas: " + tentativas));
+            tentativas++;
+
+           if (numeroDigitado == numeroSorteado){
+                alert("PARABÉNS, VOCÊ GANHOU!");
+                break;
+            } else if(tentativas == 3){
+                alert("SUAS CHANCES ACABARAM!");
+                alert("NÚMERO SORTEADO: " + numeroSorteado);
+            } else {
+                alert("Sinto muito, tente novamente!");
+            }
+        }
+    </script>
+</body>
+</html>
