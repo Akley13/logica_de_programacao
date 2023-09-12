@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COPAS DO MUNDO</title>
+</head>
+<body>
+    <script>
+
+        exibe("<h1>ANOS QUE TIVERAM COPA DO MUNDO!</h1> <hr>");
+    
+        function pulaLinha(){
+            document.write("<br><br>");
+        }
+
+        function exibe(texto){
+            document.write(texto);
+        }
+
+        var anoCopa = 1930;
+        const limite = parseInt(prompt("Digite o limite para saber os anos que tiveram copa do mundo."));
+
+        while(anoCopa <= limite){
+            exibe("<strong><big>" + anoCopa + "</big></strong>");
+            pulaLinha();
+            anoCopa += 4;
+        }
+
+        exibe("<strong><big>FIM</strong></big><hr>");
+
+    </script>
+</body>
+</html>
