@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOGO</title>
+</head>
+<body>
+    <h1>JOGO DA ADIVINHAÇÃO | ATUALIZADO (V.2.0)</h1>
+
+    <input type="number" id="v_entrada">
+    <button id="v_button">Revelar segredo</button>
+
+    <script>
+
+        var segredo = 5;
+
+        var entrada = document.querySelector("v_entrada");
+
+        var botao = document.querySelector("v_button");
+        v_button.onclick = verificacao;
+
+        function verificacao(){
+            if(v_entrada.value == segredo){
+                alert("VOCÊ ACERTOU!");
+            } else {
+                alert("VOCÊ ERROU! " + v_entrada.value);
+            }
+        }
+
+    </script>
+</body>
+</html>
