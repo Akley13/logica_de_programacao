@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOGO DA ADIVINHAÇÃO | v3.0</title>
+</head>
+<body>
+    <h1>JOGO DA ADIVINHAÇÃO | v.3.0</h1>
+
+    <p>Você terá três chances para acertar o número secreto de 1 a 13!</p>
+
+    <input type="number" id="numero"> <button id="botao">Revelar</button>
+
+    <script>
+
+        const numeroAleatorio = Math.floor(Math.random() * 13 + 1);
+        console.log(numeroAleatorio);
+
+        var entradaDoNumero = document.querySelector("numero");
+
+        var vbotao = document.querySelector("botao");
+        botao.onclick = verificacao;
+
+        function verificacao(){
+            if(numero.value == numeroAleatorio){
+                alert("VOCÊ GANHOU!");
+            } else {
+                alert("Você errou, tente novamente!")
+            }
+        }
+    </script>
+</body>
+</html>
