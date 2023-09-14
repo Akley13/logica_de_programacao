@@ -7,7 +7,12 @@ console.log(segredos[1]);
 console.log(segredos[2]);
 console.log(segredos[3]);
 
-// Adicionando elemento no array
+// Outra maneira de adicionar elemento no array
 segredos[4] = "Karinne";
 console.log(segredos);
 console.log(segredos[4]);
+
+//substituindo valor do array
+segredos[0] = "Juan";
+console.log(segredos);
+
