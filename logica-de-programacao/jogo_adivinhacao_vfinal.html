@@ -25,10 +25,21 @@
         botao.onclick = verificacao;
 
         function verificacao(){
-            if(numero.value == segredos){
-                alert("VOCÊ GANHOU!");
-            } else {
-                alert("Você errou, tente novamente!")
+
+            var achou = false;
+
+            for(var indice = 0; indice < segredos.length;indice++){
+
+                if(numero.value == segredos[indice]){
+                    alert("VOCÊ GANHOU!");
+                    achou = true;
+                    break;
+                }
+            }
+
+            
+            if(achou == false){
+                alert("Você errou, tente novamente!");
             }
 
             numero.value = "";
