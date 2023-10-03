@@ -20,15 +20,22 @@
             return Math.floor(Math.random() * 10 + 1);
         }
 
+        console.log(segredos);
+
         function sorteiaNumeros(quantidade){
             var segredos = [];
 
             var numero = 1;
+
+            while(numero <= quantidade){
+                segredos.push(sorteia());
+                numero++;
+            }
+
+            return segredos;
         }
 
         var segredos = sorteiaNumeros(5);
-
-        console.log(segredos);
 
         var entradaDoNumero = document.querySelector("numero");
         numero.focus();
@@ -40,7 +47,7 @@
 
             var achou = false;
 
-            for(var indice = 0; indice < segredos.length;indice++){
+            for(var indice = 0; indice < segredos.length; indice++){
 
                 if(numero.value == segredos[indice]){
                     alert("VOCÊ GANHOU!");
@@ -49,7 +56,6 @@
                 }
             }
 
-            
             if(achou == false){
                 alert("Você errou, tente novamente!");
             }
